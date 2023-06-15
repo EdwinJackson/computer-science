@@ -1,0 +1,247 @@
+{
+  "main": {
+    "id": "681d96b976fba5d8",
+    "type": "split",
+    "children": [
+      {
+        "id": "3eb69ed72427615f",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "4825f37da814f64c",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Algorithm Analysis.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "d227a95a6bb861a4",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "algorithms/Binary Search.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "265c88f80fb2102e",
+            "type": "leaf",
+            "state": {
+              "type": "image",
+              "state": {
+                "file": "assets/triangle-of-greed.png"
+              }
+            }
+          },
+          {
+            "id": "25196c8dc57ecf16",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "data structures/Arrays.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          }
+        ],
+        "currentTab": 1
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "24eb49722f9bb5f8",
+    "type": "split",
+    "children": [
+      {
+        "id": "41b47d75732758af",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "472d6505700049ee",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "4eba2d188aed6cc3",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "tag:#excalidraw",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "615a5c4dc4cf3e27",
+            "type": "leaf",
+            "state": {
+              "type": "starred",
+              "state": {}
+            }
+          },
+          {
+            "id": "619a1cd6afe5b143",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "008b188f9fc89a46",
+    "type": "split",
+    "children": [
+      {
+        "id": "b687b6cd80290e0d",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "30ccd1694eb0323c",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "algorithms/Binary Search.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "03502d206afba391",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "algorithms/Binary Search.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "dd9642e93305138e",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              }
+            }
+          },
+          {
+            "id": "22802ff5cdc94c56",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "algorithms/Binary Search.md"
+              }
+            }
+          },
+          {
+            "id": "71eb761e2f6bee94",
+            "type": "leaf",
+            "state": {
+              "type": "advanced-tables-toolbar",
+              "state": {}
+            }
+          }
+        ],
+        "currentTab": 4
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false,
+      "table-editor-obsidian:Advanced Tables Toolbar": false,
+      "obsidian-excalidraw-plugin:Create new drawing": false
+    }
+  },
+  "active": "d227a95a6bb861a4",
+  "lastOpenFiles": [
+    "algorithms/Bubble Sort.md",
+    "algorithms/Binary Search.md",
+    "Pasted image 20230531165502.png",
+    "assets/triangle-of-greed.png",
+    "Greediness.md",
+    "assets/accept-the-offer-preeti.png",
+    "Order & Search.md",
+    "algorithms/Heap Sort.md",
+    "algorithms/Quick Sort.md",
+    "algorithms/Merge Sort.md",
+    "algorithms/Insertion Sort.md",
+    "Naming.md",
+    "Laziness.md",
+    "Algorithm Analysis.md",
+    "data structures/Arrays.md",
+    "data structures/Stack.md",
+    "data structures/Queue.md",
+    "data structures/Linked Lists.md",
+    "data structures/Hash Table.md",
+    "data structures/Cartesian Tree.md",
+    "data structures/Binary Search Tree.md",
+    "data structures/B-Tree.md",
+    "assets/big-o-cheatsheet.png",
+    "data structures",
+    "algorithms/Linear Search.md",
+    "algorithms/Selection Sort.md",
+    "Resource Tradeoffs.md",
+    "Readme.md",
+    "Parallelism.md",
+    "assets/quick-sort.excalidraw.svg",
+    "Excalidraw/quick-sort.excalidraw.md",
+    "template",
+    "Untitled.canvas",
+    "assets/selection-sort.excalidraw.svg",
+    "assets/bubble-sort.excalidraw.svg",
+    "assets/bubble-sort.excalidraw.svg",
+    "assets/bubble-sort.excalidraw.png",
+    "assets/parallelism.png",
+    "Excalidraw",
+    "algorithms",
+    "assets"
+  ]
+}
