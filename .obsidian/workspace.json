@@ -8,19 +8,21 @@
         "type": "tabs",
         "children": [
           {
-            "id": "4825f37da814f64c",
+            "id": "25196c8dc57ecf16",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Algorithm Analysis.md",
+                "file": "architecture/Load Balancing.md",
                 "mode": "source",
                 "source": false
-              }
+              },
+              "icon": "lucide-file",
+              "title": "Load Balancing"
             }
           },
           {
-            "id": "d227a95a6bb861a4",
+            "id": "326a0465d35c8a28",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -28,29 +30,9 @@
                 "file": "algorithms/Binary Search.md",
                 "mode": "source",
                 "source": false
-              }
-            }
-          },
-          {
-            "id": "265c88f80fb2102e",
-            "type": "leaf",
-            "state": {
-              "type": "image",
-              "state": {
-                "file": "assets/triangle-of-greed.png"
-              }
-            }
-          },
-          {
-            "id": "25196c8dc57ecf16",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "data structures/Arrays.md",
-                "mode": "source",
-                "source": false
-              }
+              },
+              "icon": "lucide-file",
+              "title": "Binary Search"
             }
           }
         ],
@@ -74,7 +56,9 @@
               "type": "file-explorer",
               "state": {
                 "sortOrder": "alphabetical"
-              }
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Files"
             }
           },
           {
@@ -89,7 +73,9 @@
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical"
-              }
+              },
+              "icon": "lucide-search",
+              "title": "Search"
             }
           },
           {
@@ -97,7 +83,9 @@
             "type": "leaf",
             "state": {
               "type": "starred",
-              "state": {}
+              "state": {},
+              "icon": "lucide-file",
+              "title": "Plugin no longer active"
             }
           },
           {
@@ -105,7 +93,9 @@
             "type": "leaf",
             "state": {
               "type": "bookmarks",
-              "state": {}
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Bookmarks"
             }
           }
         ]
@@ -128,7 +118,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "algorithms/Binary Search.md",
+                "file": "networking/Reverse Proxy.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -136,7 +126,9 @@
                 "searchQuery": "",
                 "backlinkCollapsed": false,
                 "unlinkedCollapsed": true
-              }
+              },
+              "icon": "links-coming-in",
+              "title": "Backlinks for Reverse Proxy"
             }
           },
           {
@@ -145,10 +137,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "algorithms/Binary Search.md",
+                "file": "networking/Reverse Proxy.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
-              }
+              },
+              "icon": "links-going-out",
+              "title": "Outgoing links from Reverse Proxy"
             }
           },
           {
@@ -159,7 +153,9 @@
               "state": {
                 "sortOrder": "frequency",
                 "useHierarchy": true
-              }
+              },
+              "icon": "lucide-tags",
+              "title": "Tags"
             }
           },
           {
@@ -168,8 +164,10 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "algorithms/Binary Search.md"
-              }
+                "file": "networking/Reverse Proxy.md"
+              },
+              "icon": "lucide-list",
+              "title": "Outline of Reverse Proxy"
             }
           },
           {
@@ -177,7 +175,9 @@
             "type": "leaf",
             "state": {
               "type": "advanced-tables-toolbar",
-              "state": {}
+              "state": {},
+              "icon": "spreadsheet",
+              "title": "Advanced Tables"
             }
           }
         ],
@@ -200,27 +200,33 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "d227a95a6bb861a4",
+  "active": "326a0465d35c8a28",
   "lastOpenFiles": [
-    "algorithms/Bubble Sort.md",
-    "algorithms/Binary Search.md",
-    "Pasted image 20230531165502.png",
+    "Algorithm Analysis.md",
+    "networking/TLS.md",
+    "networking/Reverse Proxy.md",
+    "architecture/Load Balancing.md",
+    "networking/OSI Model.md",
+    "networking",
+    "data structures/Arrays.md",
+    "architecture",
     "assets/triangle-of-greed.png",
-    "Greediness.md",
-    "assets/accept-the-offer-preeti.png",
+    "data structures/Hash Table.md",
     "Order & Search.md",
+    "Naming.md",
+    "Laziness.md",
+    "Greediness.md",
+    "assets/Pasted image 20230531165502.png",
+    "algorithms/Binary Search.md",
+    "algorithms/Bubble Sort.md",
+    "assets/accept-the-offer-preeti.png",
     "algorithms/Heap Sort.md",
     "algorithms/Quick Sort.md",
     "algorithms/Merge Sort.md",
     "algorithms/Insertion Sort.md",
-    "Naming.md",
-    "Laziness.md",
-    "Algorithm Analysis.md",
-    "data structures/Arrays.md",
     "data structures/Stack.md",
     "data structures/Queue.md",
     "data structures/Linked Lists.md",
-    "data structures/Hash Table.md",
     "data structures/Cartesian Tree.md",
     "data structures/Binary Search Tree.md",
     "data structures/B-Tree.md",
@@ -229,10 +235,7 @@
     "algorithms/Linear Search.md",
     "algorithms/Selection Sort.md",
     "Resource Tradeoffs.md",
-    "Readme.md",
-    "Parallelism.md",
     "assets/quick-sort.excalidraw.svg",
-    "Excalidraw/quick-sort.excalidraw.md",
     "template",
     "Untitled.canvas",
     "assets/selection-sort.excalidraw.svg",
