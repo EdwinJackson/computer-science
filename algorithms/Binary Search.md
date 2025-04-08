@@ -3,7 +3,6 @@ Binary search is a search algorithm that finds the position of a target value wi
 ## Spec
 
 Binary search is an efficient algorithm because it eliminates half of the possible elements in each iteration. The time complexity of binary search is O(log n), where n is the number of elements in the array. The space complexity of binary search is O(1), because it only requires a constant amount of extra space to store the indices of the left and right halves.
-
 ## Implementation
 
 ```ts
@@ -62,4 +61,4 @@ console.log(result); // Output: { name: "Taeyang", number: "+82 06 0555 4567" }
 - The function checks if `left` is greater or equal to `right`, which indicates that the search space is empty, and returns `undefined` in that case.
 - The function calculates the `mid` index as the average of `left` and `right`, and retrieves the corresponding name of the band member from the array.
 - If the `midName` is equal to the `targetName`, the band member object is found and returned.
-- If the `midName` is less than the `targetName`, it means the desired band member is in the **right half** of the remaining array, so the `binarySearch` function is recursively called with the 
+- If the `midName` is less than the `targetName`, it means the desired band member is in the **right half** of the remaining array, so the `binarySearch` function is recursively called with an array-slice containing all of the elements from `midName` to the end of the array.

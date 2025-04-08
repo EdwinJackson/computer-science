@@ -1,0 +1,3 @@
+- An **intermediary between clients and servers** forwarding client requests to backend servers.
+- Centralize access to backend services, enforce security policies, and provide features like caching and SSL termination.
+- A single server or a small pool of servers rather than a large-scale distribution.

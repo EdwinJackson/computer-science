@@ -18,7 +18,7 @@ Seems pretty basic...
 The efficiency of array operations depends on type, size, and location. Consider common scenarios: insert, delete, modify.
 
 ### Insertion
-Adding an element to an array is not as easy as one might think. Since arrays are created as a fixed size they need to be expanded in order to accommodate more elements. This gets even more complex when we want to insert an element into the middle of an array, or any position that is not the `array[0]` or `array[array.length -1]` indexes.
+Adding an element to an array is more challenging than one might think. Since arrays are created as a fixed size they need to be expanded to accommodate more elements. This gets even more complex when we want to insert an element into the middle of an array, or any position that is not the `array[0]` or `array[array.length -1]` indexes.
 
 **Standard Insertion**
 To insert an element at a given position in an array, we need to shift all the elements after that position by one place to the right. This takes $O(n)$ time in the worst case, where n is the number of elements in the array. The space complexity is also $O(n)$, since we may need to allocate a new array if the original one is full.
@@ -39,19 +39,21 @@ public class DynamicArray {
         }
 
         if (size == array.length) {
-            resizeArray();
+            resizeArray(); // Amortized linear function 0(n)
         }
 
         // Shift elements to the right to accommodate the new value
-        for (int i = size; i > index; i--) {
+        for (int i = size; i > index; i--) { // 0(n)
             array[i] = array[i - 1];
         }
 
         // Insert the value at the specified index
         array[index] = value;
         size++;
-    }
+    } // n + n reduces to 0(n)
 
+    // This is what we call an `Amortized linear` function.
+    // you can see the array grows by 2x every time it is resized
     private void resizeArray() {
         int newCapacity = array.length * 2;
         int[] newArray = new int[newCapacity];
@@ -101,7 +103,7 @@ public class DynamicArray {
         size = 0;
     }
 
-	// folded
+    // folded
     public void insert(int value, int index) { ... }
 
     public void bulkInsert(int[] values) {
@@ -109,7 +111,7 @@ public class DynamicArray {
             return;
         }
 
-		// double the size of the array
+        // double the size of the array
         int newSize = size + values.length;
 
         if (newSize > array.length) {
