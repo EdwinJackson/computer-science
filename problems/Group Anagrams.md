@@ -21,9 +21,7 @@ groupAnagrams(["abc", "bca", "bac", "xyz", "zyx"])
 // returns [["abc","bca","bac"], ["xyz","zyx"]]
 ```
 
-<details>
-<summary>JavaScript Solution</summary>
-
+## Solution
 
 ```js
 /**
@@ -82,4 +80,6 @@ function groupAnagramsCharCount(strs) {
 };
 ```
 
-</details>
+## Related To
+- [[data structures/Hash Table]]
+- [[algorithms/Merge Sort]]

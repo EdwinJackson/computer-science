@@ -1,0 +1,17 @@
+{
+	"nodes":[
+		{"id":"6003cc366e127d0f","type":"file","file":"architecture/Dual Write Problem.md","x":-680,"y":-520,"width":400,"height":400},
+		{"id":"7b6842f1fbc18a4f","type":"text","text":"When you want to with the highest durability possible","x":-80,"y":-350,"width":250,"height":60},
+		{"id":"3c88ecd8a4b1eab2","type":"file","file":"architecture/Outbox Pattern.md","x":420,"y":-520,"width":400,"height":400},
+		{"id":"e107d53022e22e6f","x":-80,"y":140,"width":250,"height":120,"type":"text","text":"When you want to solve with the lowest effort possible"},
+		{"id":"56d1621d7396482d","x":950,"y":170,"width":530,"height":60,"type":"text","text":"Dependencies:\n- [Debezium](https://debezium.io/)\n- [Postgres WAL](https://www.architecture-weekly.com/p/the-write-ahead-log-a-foundation)\n- "},
+		{"id":"c274b9ffd9cde941","x":420,"y":0,"width":400,"height":400,"type":"file","file":"architecture/Change Data Capture.md"}
+	],
+	"edges":[
+		{"id":"f73548f956c7d208","fromNode":"6003cc366e127d0f","fromSide":"right","toNode":"7b6842f1fbc18a4f","toSide":"left"},
+		{"id":"127eee59b178a06e","fromNode":"7b6842f1fbc18a4f","fromSide":"right","toNode":"3c88ecd8a4b1eab2","toSide":"left"},
+		{"id":"62639b5d7b551cf8","fromNode":"6003cc366e127d0f","fromSide":"right","toNode":"e107d53022e22e6f","toSide":"left"},
+		{"id":"7e40987c5e918285","fromNode":"e107d53022e22e6f","fromSide":"right","toNode":"c274b9ffd9cde941","toSide":"left"},
+		{"id":"88fbf8afb55b87a0","fromNode":"c274b9ffd9cde941","fromSide":"right","toNode":"56d1621d7396482d","toSide":"left"}
+	]
+}

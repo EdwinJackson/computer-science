@@ -44,3 +44,7 @@ var maxProfit = function(prices) {
     return maxProfit;
 };
 ```
+
+## Related To
+- [[data structures/Arrays]]
+- [[Greediness]]

@@ -1,0 +1,1 @@
+Workspaces in Databricks provide collaborative environments where teams can configure clusters, schedule jobs, and manage permissions. Each workspace integrates with cloud storage (e.g., AWS S3, Azure Data Lake) and supports Unity Catalog for centralized metastore management.

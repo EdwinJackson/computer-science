@@ -23,7 +23,7 @@ JavaScript Solution
  * @return {boolean}
  */
 var containsDuplicate = function(nums) {
-    const seen = new Set(); // Use a Set for efficient O(1) average time lookups
+    const seen = new Set(); // O(1) lookups
 
     for (const num of nums) {
         if (seen.has(num)) {
@@ -37,3 +37,7 @@ var containsDuplicate = function(nums) {
     return false;
 };
 ```
+
+## Related To
+- [[data structures/Arrays]]
+- [[data structures/Hash Table]]

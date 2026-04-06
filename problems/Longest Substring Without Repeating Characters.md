@@ -1,12 +1,17 @@
 # Longest Substring Without Repeating Characters
 Difficulty: **Medium**
 
+**The Scenario:** You are designing a **Cybersecurity Monitoring Tool** that analyzes streams of incoming network traffic. To detect a specific type of "entropy-based" attack, you need to find the longest continuous sequence of unique data packets (represented as characters) before a duplicate packet appears.
+
+- **The Goal:** Determine the length of the longest segment of the traffic stream that contains no repeated identifiers.
+
 Requirements:
 - Given a string `s`.
 - Find the length of the longest substring within `s` that does not contain repeating characters.
 - A substring is a contiguous sequence of characters within a string.
 
 Test cases:
+
 ```js
 lengthOfLongestSubstring("abcabcbb") // returns 3 (substring "abc")
 lengthOfLongestSubstring("bbbbb") // returns 1 (substring "b")
@@ -17,8 +22,7 @@ lengthOfLongestSubstring("au") // returns 2
 lengthOfLongestSubstring("dvdf") // returns 3 (substring "vdf")
 ```
 
-<details>
-<summary>JavaScript Solution</summary>
+## JavaScript Solution
 
 ```js
 /**
@@ -81,4 +85,6 @@ const lengthOfLongestSubstringSet = function(s) {
 };
 ```
 
-</details>
+## Related To
+- [[data structures/Hash Table]]
+- [[data structures/Arrays]]

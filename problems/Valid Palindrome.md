@@ -16,9 +16,7 @@ isPalindrome("0P") // returns false
 isPalindrome("Was it a car or a cat I saw?") // returns true
 ```
 
-<details>
-    <summary>JavaScript Solution</summary>
-
+## JavaScript Solution
 
 ```js
     /**
@@ -60,4 +58,6 @@ var isPalindromeConcise = function(s) {
 };
 
 ```
-</details>
+
+## Related To
+- [[data structures/Arrays]]

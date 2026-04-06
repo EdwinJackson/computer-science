@@ -53,7 +53,7 @@ console.log(sortedArray); // Output: [1, 2, 4, 5, 7]
 
 ## Related To:
 - [[Order & Search]]
-- [[Binary Search]]
+- [[algorithms/Binary Search]]
 - [[Heap Sort]]
 - [[Merge Sort]]
 - [[Quick Sort]]

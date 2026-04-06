@@ -31,4 +31,4 @@ Searching is the process of finding a specific piece of data within a collection
 
 ### Searching Algorithms
 - [[Linear Search]] - This is a simple searching algorithm that scans through a collection of data from left to right until it finds the target or reaches the end. It is inefficient for large collections.
-- [[Binary Search]]- This is a fast and efficient searching algorithm that works on ordered collections of data, it does not work on unordered data. Binary search repeatedly divides the collection into two halves and compares the target with the middle element until it finds the target or determines that it does not exist.
+- [[algorithms/Binary Search]]- This is a fast and efficient searching algorithm that works on ordered collections of data, it does not work on unordered data. Binary search repeatedly divides the collection into two halves and compares the target with the middle element until it finds the target or determines that it does not exist.

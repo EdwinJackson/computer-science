@@ -16,8 +16,7 @@ isAnagram("", "") // returns true
 isAnagram("aacc", "ccac") // returns false (counts don't match 'a')
 ```
 
-<details>
-    <summary>JavaScript Solution</summary>
+## JavaScript Solution
 
 ```js
 /**
@@ -63,4 +62,6 @@ var isAnagramSort = function(s, t) {
 };
 ```
 
-</details>
+## Related To
+- [[data structures/Hash Table]]
+- [[algorithms/Merge Sort]]

@@ -43,3 +43,7 @@ var twoSum = function(nums, target) {
     return [];
 };
 ```
+
+## Related To
+- [[data structures/Arrays]]
+- [[data structures/Hash Table]]

@@ -2,5 +2,8 @@
   "accentColor": "",
   "translucency": true,
   "theme": "system",
-  "cssTheme": "Minimal"
+  "cssTheme": "Minimal",
+  "textFontFamily": "TikTok Sans,Fira Sans",
+  "monospaceFontFamily": "Monaspace Argon",
+  "interfaceFontFamily": "Inter,Monaspace Xenon"
 }

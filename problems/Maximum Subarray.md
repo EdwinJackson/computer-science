@@ -42,3 +42,6 @@ var maxSubArray = function(nums) {
     return globalMax;
 };
 ```
+
+## Related To
+- [[data structures/Arrays]]

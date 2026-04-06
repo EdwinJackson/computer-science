@@ -38,5 +38,5 @@ sendTextMessage(jennie, "Band practice started 43 seconds ago!")
 
 ## Relates To
 - [[Order & Search]]
-- [[Binary Search]]
+- [[algorithms/Binary Search]]
 - [[Selection Sort]]
