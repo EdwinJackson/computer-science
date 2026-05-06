@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "interview prep/Behavioural.md",
+                "file": "engineering-manager/architecture-documentation.md",
                 "mode": "source",
-                "source": false
+                "source": true
               },
               "icon": "lucide-file",
-              "title": "Behavioural"
+              "title": "architecture-documentation"
             }
           }
         ]
@@ -104,7 +104,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "strategy/Ownership.md",
+                "file": "engineering-manager/change-management.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -114,7 +114,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for Ownership"
+              "title": "Backlinks for change-management"
             }
           },
           {
@@ -191,32 +191,32 @@
   },
   "active": "a0ad8d152c6ead88",
   "lastOpenFiles": [
-    "engineering-manager/team-mergers.md",
+    "engineering-manager/critical-situation-leadership.md",
+    "engineering-manager/em-vs-tech-lead-vs-ic.md",
+    "engineering-manager/external-collaboration.md",
+    "engineering-manager/architectural-decision-making.md",
+    "engineering-manager/api-strategy.md",
+    "engineering-manager/agile-methodologies.md",
+    "engineering-manager/change-management.md",
+    "engineering-manager/trust-influence-building.md",
+    "engineering-manager/trust-/-influence-building.md",
+    "engineering-manager/budget-planning.md",
+    "project management/Managing Dependencies.md",
+    "engineering-manager/testing-strategies.md",
+    "engineering-manager/defining-and-enforcing-values.md",
+    "engineering-manager/culture-evolution.md",
     "engineering-manager/contingency-planning.md",
+    "engineering-manager/trust-and-influence-building.md",
+    "engineering-manager/development-release-workflow.md",
+    "engineering-manager/development-/-release-workflow.md",
+    "engineering-manager/ci-cd-implementation.md",
+    "engineering-manager/ci/cd-implementation.md",
+    "engineering-manager/bias-recognition-and-mitigation.md",
+    "engineering-manager/bias-recognition-/-mitigation.md",
+    "interview prep/Behavioural.md",
+    "engineering-manager/team-mergers.md",
     "engineering-manager/innovation-fostering.md",
     "engineering-manager/system-design-and-architecture.md",
-    "engineering-manager/technology-partnerships.md",
-    "engineering-manager/cross-department-collaboration.md",
-    "engineering-manager/quality-metrics.md",
-    "engineering-manager/lessons-learned.md",
-    "engineering-manager/process-changes.md",
-    "engineering-manager/post-incident-analysis.md",
-    "engineering-manager/change-strategy.md",
-    "engineering-manager/board-presentations.md",
-    "engineering-manager/work-life-balance-during-crises.md",
-    "engineering-manager/product-strategy-alignment.md",
-    "engineering-manager/external-collaboration.md",
-    "engineering-manager/reorganizations.md",
-    "engineering-manager/testing-strategies.md",
-    "engineering-manager/knowledge-bases.md",
-    "engineering-manager/disaster-recovery.md",
-    "engineering-manager/critical-situation-leadership.md",
-    "engineering-manager/recognition-programs.md",
-    "engineering-manager/burnout-prevention.md",
-    "engineering-manager/team-health-metrics.md",
-    "engineering-manager/market-awareness.md",
-    "engineering-manager/technical-customer-support.md",
-    "engineering-manager/emergency-protocols.md",
     "engineering-manager/trust-",
     "engineering-manager/development-",
     "engineering-manager/ci",

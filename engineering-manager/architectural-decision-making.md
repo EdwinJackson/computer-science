@@ -3,7 +3,9 @@ id: FtWNnOE3zObmjS-Og26M3title: "Architectural Decision-Making"
 tags:
   - concept
   - knowledge-base
-created: 2026-04-06source-count: 7---
+created: 2026-04-06
+source-count: 7
+---
 
 # Architectural Decision-Making
 > [!abstract] About this note

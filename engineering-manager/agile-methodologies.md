@@ -3,13 +3,13 @@ id: n9gvPHn4c1U-l6v-W9v6rtitle: "Agile methodologies"
 tags:
   - concept
   - knowledge-base
-created: 2026-04-06source-count: 9---
+created: 2026-04-06
+source-count: 9
 
 # Agile methodologies
 > [!abstract] About this note
 > Conceptual framework synthesised from **9 sources**.
 > Expand each section to deepen the framework.
-
 ---
 
 ## Definition & Scope

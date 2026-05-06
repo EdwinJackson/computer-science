@@ -33,9 +33,10 @@ The six methods are as follows:
 > *How do different sources frame this concept?*
 
 ### Lewin Change Management Model vs. Kotter 8 Step Process
-|Tool / Concept / Challenge|Lewin|Kotter|
-|--|--|--|
-|Resistance management|Resistance to change is addressed in the unfreeze stage.
+| Tool / Concept / Challenge | Lewin                                                    | Kotter |
+| -------------------------- | -------------------------------------------------------- | ------ |
+| Resistance management      | Resistance to change is addressed in the unfreeze stage. |        |
+|                            |                                                          |        |
 It is replaced by motivation to change.|Kotter flips resistance on its head and talks about “buy-in”.
 Instead of presenting an idea, you have to create a movement.
 This is where the volunteer army (step 4) comes in.|
