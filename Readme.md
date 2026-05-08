@@ -1,122 +1,438 @@
-# Computer Science Concepts
+# Computer Science Knowledge Base
 
-Sometimes it's really good to just cover the basics. You can find some examples of core concepts and brief explanations on them ideally with some sort of diagram, image, or video.
+A reference library covering computer science fundamentals, systems design, data engineering, machine learning, and engineering leadership.
 
-# Study Plan
+## Table of Contents
 
-**Core Principles:**
-
-1.  **Consistency:** Aim to study and practice regularly (e.g., daily or several times a week).
-2.  **Understanding over Memorization:** Focus on *why* a particular data structure or algorithm works and is chosen for a problem.
-3.  **Start Simple, Build Complexity:** Begin with easier problems within a topic to grasp the fundamentals before tackling medium/hard ones.
-4.  **Complexity Analysis:** Always analyze the time and space complexity (Big O notation) of your solutions. Interviewers *will* ask.
-5.  **Practice Communication:** Try explaining your thought process out loud as you solve problems.
-
-**Suggested Timeline:** 8-12 Weeks (Flexible - adjust based on your pace and available time)
-
----
-
-**Phase 1: Foundations (Weeks 1-2)**
-
-* **Week 1: Big O Notation & Arrays/Strings**
-    * **Concepts:** Time Complexity, Space Complexity, Big O Notation (O(1), O(log n), O(n), O(n log n), O(n^2), O(2^n)). Basic array/string operations (access, insertion, deletion, iteration).
-    * **LeetCode Focus:**
-        * **Arrays:** Two Sum (Easy), Best Time to Buy and Sell Stock (Easy), Contains Duplicate (Easy), Product of Array Except Self (Medium), Maximum Subarray (Medium).
-        * **Strings:** Valid Palindrome (Easy), Valid Anagram (Easy), Longest Substring Without Repeating Characters (Medium), Group Anagrams (Medium).
-    * **Tips:** Understand how nested loops affect complexity. Learn common string manipulation methods in your chosen language.
-
-* **Week 2: Hash Tables (Hash Maps / Dictionaries)**
-    * **Concepts:** Hash functions, collision handling, key-value storage, average O(1) lookups/insertions/deletions.
-    * **LeetCode Focus:**
-        * Revisit: Two Sum, Contains Duplicate, Valid Anagram, Group Anagrams (often solved efficiently with hash tables).
-        * New: Ransom Note (Easy), First Unique Character in a String (Easy), Subarray Sum Equals K (Medium), Top K Frequent Elements (Medium - may also use Heaps later).
-    * **Tips:** Hash tables are extremely common for counting frequencies, checking existence, and mapping values. Recognize when a problem can be simplified using quick lookups.
+- [Algorithms](#algorithms)
+- [Data Structures](#data-structures)
+- [Concepts](#concepts)
+- [Problems](#problems)
+- [Architecture](#architecture)
+- [Networking](#networking)
+- [Site Reliability Engineering](#site-reliability-engineering)
+- [Data Engineering](#data-engineering)
+- [Machine Learning](#machine-learning)
+- [Engineering Management](#engineering-management)
+- [Strategy](#strategy)
+- [Communication](#communication)
+- [Mentorship](#mentorship)
+- [Project Management](#project-management)
+- [Interview Preparation](#interview-preparation)
+- [Certifications](#certifications)
+- [Tutorials](#tutorials)
 
 ---
 
-**Phase 2: Core Data Structures (Weeks 3-5)**
+## Algorithms
 
-* **Week 3: Linked Lists**
-    * **Concepts:** Singly linked lists, doubly linked lists, nodes, pointers/references, traversal, insertion, deletion. Sentinel nodes. Fast/slow pointer technique.
-    * **LeetCode Focus:**
-        * Reverse Linked List (Easy), Merge Two Sorted Lists (Easy), Palindrome Linked List (Easy), Linked List Cycle (Easy - Fast/Slow Pointers), Remove Nth Node From End of List (Medium), Reorder List (Medium).
-    * **Tips:** Draw linked lists! Visualizing the pointer manipulation is crucial. Practice both iterative and recursive solutions where applicable.
-
-* **Week 4: Stacks & Queues**
-    * **Concepts:** Stack (LIFO - Last In First Out), Queue (FIFO - First In First Out). Common operations (push, pop, peek, enqueue, dequeue). Applications (parsing, BFS, etc.).
-    * **LeetCode Focus:**
-        * **Stacks:** Valid Parentheses (Easy), Min Stack (Easy), Evaluate Reverse Polish Notation (Medium), Daily Temperatures (Medium).
-        * **Queues:** Implement Stack using Queues (Easy), Implement Queue using Stacks (Easy), Number of Islands (Medium - uses Queue for BFS, see Graphs week), Design Circular Queue (Medium).
-    * **Tips:** Recognize problems where order of processing matters (LIFO/FIFO). Stacks are great for matching pairs or reversing order. Queues are fundamental for level-order traversal (BFS).
-
-* **Week 5: Trees (Binary Trees & Binary Search Trees - BSTs)**
-    * **Concepts:** Nodes, root, parent, child, leaf. Tree traversals (Inorder, Preorder, Postorder - recursive and iterative). Level-order traversal (BFS). Binary Search Tree properties, insertion, validation, searching. Height, depth, balancing (conceptual).
-    * **LeetCode Focus:**
-        * **General Trees:** Maximum Depth of Binary Tree (Easy), Same Tree (Easy), Invert Binary Tree (Easy), Binary Tree Level Order Traversal (Medium), Construct Binary Tree from Preorder and Inorder Traversal (Medium).
-        * **BSTs:** Validate Binary Search Tree (Medium), Lowest Common Ancestor of a BST (Easy), Kth Smallest Element in a BST (Medium).
-    * **Tips:** Recursion is very natural for tree problems. Master the different traversal methods. Understand the BST property deeply.
+| Topic |
+|-------|
+| [Binary Search](algorithms/Binary%20Search.md) |
+| [Bubble Sort](algorithms/Bubble%20Sort.md) |
+| [Heap Sort](algorithms/Heap%20Sort.md) |
+| [Insertion Sort](algorithms/Insertion%20Sort.md) |
+| [Linear Search](algorithms/Linear%20Search.md) |
+| [Merge Sort](algorithms/Merge%20Sort.md) |
+| [Quick Sort](algorithms/Quick%20Sort.md) |
+| [Selection Sort](algorithms/Selection%20Sort.md) |
 
 ---
 
-**Phase 3: Algorithms & Advanced Topics (Weeks 6-9)**
+## Data Structures
 
-* **Week 6: Searching & Sorting + Heaps (Priority Queues)**
-    * **Concepts:** Binary Search (on sorted arrays/search spaces). Basic sorting algorithms (conceptual understanding of Bubble, Insertion, Selection, Merge Sort, Quick Sort - know their complexities). Heaps (Min-Heap, Max-Heap), heapify, insert, extract-min/max. Priority Queue applications.
-    * **LeetCode Focus:**
-        * **Binary Search:** Binary Search (Easy), Find Minimum in Rotated Sorted Array (Medium), Search in Rotated Sorted Array (Medium), Time Based Key-Value Store (Medium).
-        * **Heaps:** Kth Largest Element in an Array (Medium), Top K Frequent Elements (Medium), Find Median from Data Stream (Hard), Merge K Sorted Lists (Hard).
-        * **Sorting:** Problems often require sorting as a first step (e.g., Merge Intervals (Medium), Meeting Rooms II (Medium) - often solved with sorting + heaps/pointers).
-    * **Tips:** Binary search requires a sorted input or a monotonic search space. Heaps are perfect for finding min/max elements efficiently or maintaining order among dynamic elements.
-
-* **Week 7: Graphs**
-    * **Concepts:** Nodes (vertices), edges. Representations (Adjacency List, Adjacency Matrix). Traversal algorithms: Breadth-First Search (BFS), Depth-First Search (DFS - recursive and iterative). Connected components, cycles.
-    * **LeetCode Focus:**
-        * Number of Islands (Medium - BFS or DFS), Clone Graph (Medium - BFS or DFS), Course Schedule (Medium - DFS/Topological Sort), Pacific Atlantic Water Flow (Medium - BFS or DFS from edges), Word Ladder (Hard - BFS).
-    * **Tips:** Adjacency lists are usually preferred. Choose BFS for shortest paths in unweighted graphs and level-order traversal. Choose DFS for exploring paths fully, cycle detection, and topological sort. Practice building the graph representation from the problem description.
-
-* **Week 8: Recursion & Backtracking**
-    * **Concepts:** Base cases, recursive steps. Exploring all possible solutions/combinations/permutations. Pruning the search space.
-    * **LeetCode Focus:**
-        * Subsets (Medium), Combination Sum (Medium), Permutations (Medium), N-Queens (Hard), Word Search (Medium).
-    * **Tips:** Backtracking often involves a helper function with parameters tracking the current state. Use a "choose, explore, unchoose" pattern. Draw the recursion tree to understand the flow.
-
-* **Week 9: Dynamic Programming (DP)**
-    * **Concepts:** Overlapping subproblems, optimal substructure. Memoization (top-down) vs. Tabulation (bottom-up). Identifying DP state and recurrence relation.
-    * **LeetCode Focus:**
-        * Climbing Stairs (Easy), Coin Change (Medium), Longest Increasing Subsequence (Medium), House Robber (Medium), Word Break (Medium), Edit Distance (Hard).
-    * **Tips:** DP can be challenging. Start with problems that have clear overlapping subproblems. Try solving recursively first, then add memoization. Finally, try converting to a bottom-up tabulation approach. Practice recognizing DP patterns.
+| Topic |
+|-------|
+| [Arrays](data%20structures/Arrays.md) |
+| [B-Tree](data%20structures/B-Tree.md) |
+| [Binary Search Tree](data%20structures/Binary%20Search%20Tree.md) |
+| [Cartesian Tree](data%20structures/Cartesian%20Tree.md) |
+| [Graph](data%20structures/Graph.md) |
+| [Hash Table](data%20structures/Hash%20Table.md) |
+| [Heap](data%20structures/Heap.md) |
+| [Linked Lists](data%20structures/Linked%20Lists.md) |
+| [Queue](data%20structures/Queue.md) |
+| [Stack](data%20structures/Stack.md) |
 
 ---
 
-**Phase 4: Common Patterns & Review (Weeks 10-12+)**
+## Concepts
 
-* **Week 10: Common Algorithmic Patterns**
-    * **Concepts:** Two Pointers, Sliding Window, Greedy Algorithms.
-    * **LeetCode Focus:**
-        * **Two Pointers:** Valid Palindrome (Easy), Container With Most Water (Medium), 3Sum (Medium), Trapping Rain Water (Hard).
-        * **Sliding Window:** Best Time to Buy and Sell Stock (Easy), Longest Substring Without Repeating Characters (Medium), Minimum Window Substring (Hard).
-        * **Greedy:** Maximum Subarray (Medium - Kadane's algorithm), Jump Game (Medium), Merge Intervals (Medium).
-    * **Tips:** Recognize when comparing/manipulating elements from both ends (Two Pointers) or analyzing contiguous subarrays/substrings (Sliding Window) is beneficial. Greedy works when making the locally optimal choice leads to a global optimum.
+Abstract algorithmic and design principles.
 
-* **Week 11: Review & Practice Mediums**
-    * **Focus:** Revisit topics you found difficult. Solve a variety of Medium-level problems mixing different data structures and algorithms. Check company-specific tagged LeetCode lists if you are targeting particular companies.
-    * **Activity:** Try mock interviews ( platforms like Pramp or interviewing.io, or practice with peers). Focus on clearly explaining your approach *before* coding and discussing trade-offs.
-
-* **Week 12+: Advanced Topics & Mock Interviews**
-    * **Concepts (Optional/If Time Permits):** Tries (Prefix Trees), Bit Manipulation, Advanced Graph Algorithms (Dijkstra's, Floyd-Warshall), Union-Find.
-    * **LeetCode Focus:**
-        * **Tries:** Implement Trie (Prefix Tree) (Medium), Design Add and Search Words Data Structure (Medium).
-        * **Bit Manipulation:** Number of 1 Bits (Easy), Single Number (Easy), Reverse Bits (Easy).
-        * **Union-Find:** Number of Connected Components in an Undirected Graph (Medium).
-    * **Activity:** Continue solving Medium/Hard problems. Do more timed mock interviews simulating real conditions. Review common behavioral questions as well.
+| Topic |
+|-------|
+| [Algorithm Analysis](concepts/Algorithm%20Analysis.md) |
+| [Greediness](concepts/Greediness.md) |
+| [Laziness](concepts/Laziness.md) |
+| [Naming](concepts/Naming.md) |
+| [Order & Search](concepts/Order%20%26%20Search.md) |
+| [Parallelism](concepts/Parallelism.md) |
+| [Resource Tradeoffs](concepts/Resource%20Tradeoffs.md) |
 
 ---
 
-**Final Tips:**
+## Problems
 
-* **LeetCode Problem Selection:** Filter problems by frequency or company tags if desired. Start with Easy, but quickly move to Mediums as they are most common in interviews. Tackle Hards once comfortable with Mediums.
-* **Don't Look at Solutions Too Quickly:** Spend adequate time (e.g., 20-40 minutes) struggling with a problem before looking at hints or solutions.
-* **Understand Solutions:** If you look at a solution, don't just copy it. Understand *why* it works, its complexity, and try to re-implement it yourself later. Read the discussion forums for different approaches.
-* **Stay Updated:** Interview trends can shift slightly. Keep an eye on resources like LeetCode Discuss or Blind for recent experiences.
+Coding interview problem patterns and solutions.
 
-Good luck with your preparation! Remember that consistent effort is the most important factor.
+| Topic |
+|-------|
+| [Backtracking](problems/Backtracking.md) |
+| [Binary Search](problems/Binary%20Search.md) |
+| [Breadth First Search](problems/Breadth%20First%20Search.md) |
+| [Buying & Selling Stock](problems/Buying%20%26%20Selling%20Stock.md) |
+| [Contains Duplicate](problems/Contains%20Duplicate.md) |
+| [Depth First Search](problems/Depth%20First%20Search.md) |
+| [Fast and Slow Pointers](problems/Fast%20and%20Slow%20Pointers.md) |
+| [Group Anagrams](problems/Group%20Anagrams.md) |
+| [Longest Substring Without Repeating Characters](problems/Longest%20Substring%20Without%20Repeating%20Characters.md) |
+| [Maximum Subarray](problems/Maximum%20Subarray.md) |
+| [Product of Array Self](problems/Product%20of%20Array%20Self.md) |
+| [Three Sum](problems/Three%20Sum.md) |
+| [Two Pointers](problems/Two%20Pointers.md) |
+| [Two Sum](problems/Two%20Sum.md) |
+| [Valid Anagram](problems/Valid%20Anagram.md) |
+| [Valid Palindrome](problems/Valid%20Palindrome.md) |
+
+---
+
+## Architecture
+
+Distributed systems patterns, design patterns, and concurrency concepts.
+
+| Topic |
+|-------|
+| [ACID](architecture/ACID.md) |
+| [Actors](architecture/Actors.md) |
+| [Backpressure](architecture/Backpressure.md) |
+| [CAP Theorem](architecture/CAP%20Theorem.md) |
+| [Change Data Capture](architecture/Change%20Data%20Capture.md) |
+| [Compactor](architecture/Compactor.md) |
+| [CQRS](architecture/CQRS.md) |
+| [Dual Write Problem](architecture/Dual%20Write%20Problem.md) |
+| [Listen to Yourself](architecture/Listen%20to%20Yourself.md) |
+| [Load Balancing](architecture/Load%20Balancing.md) |
+| [MVC](architecture/MVC.md) |
+| [MVP](architecture/MVP.md) |
+| [MVVM](architecture/MVVM.md) |
+| [Optimistic Locking](architecture/Optimistic%20Locking.md) |
+| [Outbox Pattern](architecture/Outbox%20Pattern.md) |
+| [Pessimistic Locking](architecture/Pessimistic%20Locking.md) |
+| [Race Condition](architecture/Race%20Condition.md) |
+| [Recovery Point Objective](architecture/Recovery%20Point%20Objective.md) |
+| [Recovery Time Objective](architecture/Recovery%20Time%20Objective.md) |
+
+---
+
+## Networking
+
+| Topic |
+|-------|
+| [OSI Model](networking/OSI%20Model.md) |
+| [Reverse Proxy](networking/Reverse%20Proxy.md) |
+| [TLS](networking/TLS.md) |
+
+---
+
+## Site Reliability Engineering
+
+| Topic |
+|-------|
+| [Site Reliability Engineering](site-reliability-engineering/Site%20Reliability%20Engineering.md) |
+| [DevOps](site-reliability-engineering/DevOps.md) |
+| [class SRE implements DevOps](site-reliability-engineering/class%20SRE%20implements%20DevOps.md) |
+| [Observability](site-reliability-engineering/Observability.md) |
+| [Open Telemetry](site-reliability-engineering/Open%20Telemetry.md) |
+| [Alerting](site-reliability-engineering/Alerting.md) |
+| [Error Budgets](site-reliability-engineering/Error%20Budgets.md) |
+| [SLA](site-reliability-engineering/SLA.md) |
+| [SLI](site-reliability-engineering/SLI.md) |
+| [SLO](site-reliability-engineering/SLO.md) |
+
+---
+
+## Data Engineering
+
+Pipeline patterns and data warehouse concepts.
+
+| Topic |
+|-------|
+| [Data Engineering Ecosystem](data-engineering/Data%20Engineering%20Ecosystem.md) |
+| [Data Warehousing](data-engineering/Data%20Warehousing.md) |
+| [Full Loader](data-engineering/Full%20Loader.md) |
+| [Incremental Loader](data-engineering/Incremental%20Loader.md) |
+| [Passthrough Replicator](data-engineering/Passthrough%20Replicator.md) |
+| [Transformation Replicator](data-engineering/Transformation%20Replicator.md) |
+| [External Trigger](data-engineering/External%20Trigger.md) |
+| [Readiness Marker](data-engineering/Readiness%20Marker.md) |
+
+---
+
+## Machine Learning
+
+| Topic |
+|-------|
+| [Machine Learning](machine-learning/Machine%20Learning.md) |
+| [Transformer](machine-learning/Transformer.md) |
+| [Attention](machine-learning/Attention.md) |
+| [Embedding](machine-learning/Embedding.md) |
+| [Encoding](machine-learning/Encoding.md) |
+| [Vector](machine-learning/Vector.md) |
+
+---
+
+## Engineering Management
+
+### People & Development
+
+| Topic |
+|-------|
+| [Hiring and Recruitment](engineering-manager/hiring-and-recruitment.md) |
+| [Performance Evaluations](engineering-manager/performance-evaluations.md) |
+| [Career Development Planning](engineering-manager/career-development-planning.md) |
+| [Mentoring and Coaching](engineering-manager/mentoring-and-coaching.md) |
+| [One-on-One Meetings](engineering-manager/one-on-one-meetings.md) |
+| [Team Motivation](engineering-manager/team-motivation.md) |
+| [Emotional Intelligence](engineering-manager/emotional-intelligence.md) |
+| [Feedback Delivery](engineering-manager/feedback-delivery.md) |
+| [Delegation](engineering-manager/delegation.md) |
+| [Burnout Prevention](engineering-manager/burnout-prevention.md) |
+| [Stress Management](engineering-manager/stress-management.md) |
+| [Recognition Programs](engineering-manager/recognition-programs.md) |
+| [Bias Recognition and Mitigation](engineering-manager/bias-recognition-and-mitigation.md) |
+| [Inclusive Environment Creation](engineering-manager/inclusive-environment-creation.md) |
+| [People](engineering-manager/people.md) |
+
+### Team & Organization
+
+| Topic |
+|-------|
+| [Team Structure and Design](engineering-manager/team-structure-and-design.md) |
+| [Organization Structure](engineering-manager/organization-structure.md) |
+| [Team Mergers](engineering-manager/team-mergers.md) |
+| [Role Transitions](engineering-manager/role-transitions.md) |
+| [Reorganizations](engineering-manager/reorganizations.md) |
+| [Responsibility Shifts](engineering-manager/responsibility-shifts.md) |
+| [Team Meetings](engineering-manager/team-meetings.md) |
+| [Team Health Metrics](engineering-manager/team-health-metrics.md) |
+| [Team Traditions and Rituals](engineering-manager/team-traditions-and-rituals.md) |
+| [Social Connections](engineering-manager/social-connections.md) |
+| [Emergency Staffing](engineering-manager/emergency-staffing.md) |
+
+### Project & Technical Management
+
+| Topic |
+|-------|
+| [Sprint Planning](engineering-manager/sprint-planning.md) |
+| [Project Tracking](engineering-manager/project-tracking.md) |
+| [Timeline Estimation](engineering-manager/timeline-estimation.md) |
+| [Scope Management](engineering-manager/scope-management.md) |
+| [Milestone Management](engineering-manager/milestone-management.md) |
+| [Velocity Tracking](engineering-manager/velocity-tracking.md) |
+| [Agile Methodologies](engineering-manager/agile-methodologies.md) |
+| [Development Release Workflow](engineering-manager/development-release-workflow.md) |
+| [Release Management](engineering-manager/release-management.md) |
+| [Quality Metrics](engineering-manager/quality-metrics.md) |
+| [Technical Debt and Management](engineering-manager/technical-debt-and-management.md) |
+| [Technical Standards Setting](engineering-manager/technical-standards-setting.md) |
+| [Technical Roadmapping](engineering-manager/technical-roadmapping.md) |
+| [Code Review Best Practices](engineering-manager/code-review-best-practices.md) |
+| [Testing Strategies](engineering-manager/testing-strategies.md) |
+| [CI/CD Implementation](engineering-manager/ci-cd-implementation.md) |
+| [API Strategy](engineering-manager/api-strategy.md) |
+| [Build vs Buy Evaluation](engineering-manager/build-vs-buy-evaluation.md) |
+| [Resource Allocation](engineering-manager/resource-allocation.md) |
+| [Resource Forecasting](engineering-manager/resource-forecasting.md) |
+
+### Architecture & Systems
+
+| Topic |
+|-------|
+| [System Design and Architecture](engineering-manager/system-design-and-architecture.md) |
+| [Architecture Documentation](engineering-manager/architecture-documentation.md) |
+| [Architectural Decision Making](engineering-manager/architectural-decision-making.md) |
+| [Scaling Infrastructure](engineering-manager/scaling-infrastructure.md) |
+| [Dependency Management](engineering-manager/dependency-management.md) |
+| [System Monitoring & Performance](engineering-manager/system-monitoring-&-performance.md) |
+| [Legacy System Retirement](engineering-manager/legacy-system-retirement.md) |
+| [Security Best Practices](engineering-manager/security-best-practices.md) |
+| [Integration Management](engineering-manager/integration-management.md) |
+
+### Communication & Stakeholders
+
+| Topic |
+|-------|
+| [Stakeholder Management](engineering-manager/stakeholder-management.md) |
+| [Stakeholder Communication](engineering-manager/stakeholder-communication.md) |
+| [Communication Planning](engineering-manager/communication-planning.md) |
+| [Executive Summaries](engineering-manager/executive-summaries.md) |
+| [Board Presentations](engineering-manager/board-presentations.md) |
+| [Status Reporting](engineering-manager/status-reporting.md) |
+| [Decision Records](engineering-manager/decision-records.md) |
+| [Cross-Department Collaboration](engineering-manager/cross-department-collaboration.md) |
+| [Cross-Functional Collaboration](engineering-manager/cross-functional-collaboration.md) |
+| [External Collaboration](engineering-manager/external-collaboration.md) |
+
+### Business & Strategy
+
+| Topic |
+|-------|
+| [Budget Planning](engineering-manager/budget-planning.md) |
+| [Budget Requests](engineering-manager/budget-requests.md) |
+| [ROI Analysis](engineering-manager/roi-analysis.md) |
+| [Cost Optimization](engineering-manager/cost-optimization.md) |
+| [Business Case Development](engineering-manager/business-case-development.md) |
+| [Strategic Proposals](engineering-manager/strategic-proposals.md) |
+| [Product Strategy Alignment](engineering-manager/product-strategy-alignment.md) |
+| [Product](engineering-manager/product.md) |
+| [Feature Prioritization](engineering-manager/feature-prioritization.md) |
+| [KPI Definition](engineering-manager/kpi-definition.md) |
+| [Vision Alignment](engineering-manager/vision-alignment.md) |
+| [Market Awareness](engineering-manager/market-awareness.md) |
+| [Competitive Analysis](engineering-manager/competitive-analysis.md) |
+| [AI Native Leadership](engineering-manager/ai-native-leadership.md) |
+
+### Operations & Incidents
+
+| Topic |
+|-------|
+| [Incident Management](engineering-manager/incident-management.md) |
+| [War Room Management](engineering-manager/war-room-management.md) |
+| [Emergency Protocols](engineering-manager/emergency-protocols.md) |
+| [Production Issues Management](engineering-manager/production-issues-management.md) |
+| [Service Recovery](engineering-manager/service-recovery.md) |
+| [Security Incident Handling](engineering-manager/security-incident-handling.md) |
+| [Blameless Post-Mortems](engineering-manager/blameless-post-mortems.md) |
+| [Project Postmortems](engineering-manager/project-postmortems.md) |
+| [Post-Incident Analysis](engineering-manager/post-incident-analysis.md) |
+| [Disaster Recovery](engineering-manager/disaster-recovery.md) |
+| [Business Continuity](engineering-manager/business-continuity.md) |
+| [Contingency Planning](engineering-manager/contingency-planning.md) |
+| [Risk Management](engineering-manager/risk-management.md) |
+| [Technical Risk Assessment](engineering-manager/technical-risk-assessment.md) |
+| [Impact Assessment](engineering-manager/impact-assessment.md) |
+| [Work-Life Balance During Crises](engineering-manager/work-life-balance-during-crises.md) |
+
+### Culture & Knowledge
+
+| Topic |
+|-------|
+| [Company Culture](engineering-manager/company-culture.md) |
+| [Culture Evolution](engineering-manager/culture-evolution.md) |
+| [Defining and Enforcing Values](engineering-manager/defining-and-enforcing-values.md) |
+| [Technical Excellence Mindset](engineering-manager/technical-excellence-mindset.md) |
+| [Knowledge Sharing Practices](engineering-manager/knowledge-sharing-practices.md) |
+| [Learning Culture Development](engineering-manager/learning-culture-development.md) |
+| [Innovation Fostering](engineering-manager/innovation-fostering.md) |
+| [Tech Talks](engineering-manager/tech-talks.md) |
+| [Brown Bags](engineering-manager/brown-bags.md) |
+| [Knowledge Bases](engineering-manager/knowledge-bases.md) |
+| [Mentoring Programs](engineering-manager/mentoring-programs.md) |
+| [Process Documentation](engineering-manager/process-documentation.md) |
+| [Lessons Learned](engineering-manager/lessons-learned.md) |
+
+### Change Management
+
+| Topic |
+|-------|
+| [Change Management](engineering-manager/change-management.md) |
+| [Change Strategy](engineering-manager/change-strategy.md) |
+| [Process Changes](engineering-manager/process-changes.md) |
+| [Resistance Management](engineering-manager/resistance-management.md) |
+| [Technology Adoption](engineering-manager/technology-adoption.md) |
+| [Tool Transitions](engineering-manager/tool-transitions.md) |
+| [Migration Planning](engineering-manager/migration-planning.md) |
+
+### Leadership
+
+| Topic |
+|-------|
+| [Trust and Influence Building](engineering-manager/trust-and-influence-building.md) |
+| [Conflict Resolution](engineering-manager/conflict-resolution.md) |
+| [Politics Navigation](engineering-manager/politics-navigation.md) |
+| [Critical Situation Leadership](engineering-manager/critical-situation-leadership.md) |
+| [EM vs Tech Lead vs IC](engineering-manager/em-vs-tech-lead-vs-ic.md) |
+| [Software Engineering Background](engineering-manager/software-engineering-background.md) |
+| [Best Practices](engineering-manager/best-practices.md) |
+| [Process](engineering-manager/process.md) |
+
+### External & Vendor Relations
+
+| Topic |
+|-------|
+| [Vendor Management](engineering-manager/vendor-management.md) |
+| [Vendor Relationships](engineering-manager/vendor-relationships.md) |
+| [Technical Partnerships](engineering-manager/technical-partnerships.md) |
+| [Technology Partnerships](engineering-manager/technology-partnerships.md) |
+| [Customer Success Alignment](engineering-manager/customer-success-alignment.md) |
+| [Customer Feedback Integration](engineering-manager/customer-feedback-integration.md) |
+| [Technical Customer Support](engineering-manager/technical-customer-support.md) |
+
+---
+
+## Strategy
+
+| Topic |
+|-------|
+| [AI Native Leadership](strategy/AI%20Native%20Leadership.md) |
+| [Measuring Outcomes](strategy/Measuring%20Outcomes.md) |
+| [Navigating Ambiguous Situations](strategy/Navigating%20Ambiguous%20Situations.md) |
+| [Ownership](strategy/Ownership.md) |
+| [Prioritization](strategy/Prioritization.md) |
+
+---
+
+## Communication
+
+| Topic |
+|-------|
+| [Active Listening](communication/Active%20Listening.md) |
+| [Stakeholder Management](communication/Stakeholder%20Management.md) |
+| [Translating Tech to Business](communication/Translating%20Tech%20to%20Business.md) |
+
+---
+
+## Mentorship
+
+| Topic |
+|-------|
+| [Coaching](mentorship/Coaching.md) |
+| [Delegation](mentorship/Delegation.md) |
+| [Empathy](mentorship/Empathy.md) |
+| [Team Building](mentorship/Team%20Building.md) |
+
+---
+
+## Project Management
+
+| Topic |
+|-------|
+| [Managing Dependencies](project%20management/Managing%20Dependencies.md) |
+| [Risk Assessment](project%20management/Risk%20Assessment.md) |
+
+---
+
+## Interview Preparation
+
+| Topic |
+|-------|
+| [Behavioural](interview%20prep/Behavioural.md) |
+
+---
+
+## Certifications
+
+### Databricks
+
+| Topic |
+|-------|
+| [Databricks Certification Materials](certifications/databricks/) |
+
+---
+
+## Tutorials
+
+| Topic |
+|-------|
+| [RAG with LLaMa 3 and Phi-3](Tutorials/RAG%20with%20LLaMa%203%20and%20Phi-3.md) |
